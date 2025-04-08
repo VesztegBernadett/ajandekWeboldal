@@ -31,7 +31,7 @@ form.addEventListener("submit", (e) => {
             megjegyzes.style.borderColor = "";
             index++;
             updateQuestion();
-        }, 1500);
+        }, 1000);
     } else {
         megjegyzes.textContent = "Nem választott semmit!";
     }
@@ -41,7 +41,7 @@ form.addEventListener("submit", (e) => {
 function updateQuestion() {
     const radioButtons = document.querySelectorAll('input[name="valasz"]');
     radioButtons.forEach(radio => radio.checked = false);
-    if (index <= 10) {
+    if (index <= 10) { //Itt kell modosítani
         if (index == 4) {
             let image = document.createElement("img")
             image.src = "src/doga_vz.png"
@@ -81,7 +81,7 @@ function updateQuestion() {
 
         let p = document.createElement("p");
         p.className = "szam"
-        p.textContent = `11/${helyesValaszok}`;
+        p.textContent = `11/${helyesValaszok}`; //Itt kell modosítani
         main.appendChild(p);
 
         let p2 = document.createElement("p");
