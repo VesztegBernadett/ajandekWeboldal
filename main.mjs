@@ -39,6 +39,8 @@ form.addEventListener("submit", (e) => {
 });
 
 function updateQuestion() {
+    const radioButtons = document.querySelectorAll('input[name="valasz"]');
+    radioButtons.forEach(radio => radio.checked = false);
     if (index <= 10) {
         if (index == 4) {
             let image = document.createElement("img")
