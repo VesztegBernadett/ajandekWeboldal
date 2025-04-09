@@ -95,7 +95,7 @@ function updateQuestion() {
             p2.textContent = uzenet[2]+ " 😇";
         }
 
-        p2.className = "szam"
+        p2.className = "szam";
         main.appendChild(p2);
     }
 }
