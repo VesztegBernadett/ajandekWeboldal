@@ -31,7 +31,7 @@ form.addEventListener("submit", (e) => {
             megjegyzes.style.borderColor = "";
             index++;
             updateQuestion();
-        }, 10);
+        }, 100);
     } else {
         megjegyzes.textContent = "Nem választott semmit!";
     }
